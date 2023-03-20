@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Aeonik";
+    src: url(fonts/AeonikTRIAL-Bold.otf);
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #242424;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-width: 1728px;
+        }
+    }
+}
+
+.string {
+    height: 15px;
+}
+
+main {
+    background-color: #F6F6F6;
+    .container {
+        background-color: #FFFFFF;
+        margin: 0 auto;
+        max-width: 1478px;
+        .cover {
+            margin: 0 auto;
+            max-width: 1408px;
+        }
+    }
+}
+
+.dataInformation {
+    margin-top: 3%;
+
+    h1 {
+        font-family: 'Aeonik';
+        font-size: 30px;
+        color: #101828;
+    }
+
+    p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #5F6469;
+    }
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-left: 1.8%;
+
+    a {
+        button {
+            border: 1px solid #5F6469;
+            transform: matrix(1, 0, -0.5, 0.87, 0, 0);
+        }
+        p {
+            transform: matrix(1, 0, 0.5 , 1, 0, 0);
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .buttonOne {
+            padding: 13px 165px;
+            margin-left: -2%;
+        }
+        .buttonTwo {
+            padding: 13px 159px;
+            margin-left: -2%;
+        }
+        .buttonThree {
+            padding: 13px 185px;
+            margin-left: -2%;
+        }
+    }
+}
+
+.HighCadenceFirst {
+    
+    .logo {
+        background: #D8D816;
+        margin-top: 1.7%;
+        padding: 0.6% 0;
+        p {
+            margin-left: 0.7%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 115%;
+            color: #57591A;
+        }
+    }
+
+    .navi {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+        h2 {
+            font-family: 'Aeonik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+            color: #101828;
+        }
+    }
+}
+
+.choiceIndicator {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 9% 9.2% 10.4% 10.5% 9% 9% 9% 9.2% 14.8% 10%;
+    row-gap: 36%;
+    max-width: 1263px;
+    margin-left: 2%;
+    margin-top: 2.1%;
+
+    .indicator {
+        display: flex;
+        align-items: baseline;
+
+        img {
+            width: 8px;
+            height: 8px;
+            margin-right: 7%;
+        }
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #434C5F;
+        }
+    }
+}
+
+.tableHighCadence {
+    .column {
+        
+    }
+}
