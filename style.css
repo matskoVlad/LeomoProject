@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "Aeonik";
+  src: url(fonts/AeonikTRIAL-Bold.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 30px;
+}
+
+header {
+  background-color: #242424;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container img {
+  max-width: 1728px;
+}
+
+main {
+  padding-top: 0.8%;
+  background-color: #F6F6F6;
+}
+
+main .container {
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  max-width: 1478px;
+}
+
+main .container .cover {
+  margin: 0 auto;
+  max-width: 1408px;
+}
+
+.dataInformation {
+  margin-top: 3%;
+}
+
+.dataInformation h1 {
+  font-size: 1rem;
+  font-family: 'Aeonik';
+  color: #101828;
+  margin-bottom: 0.5%;
+}
+
+.dataInformation p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.54rem;
+  color: #5F6469;
+}
+
+.options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+  margin-top: 2.5%;
+  margin-left: 0.8%;
+  max-width: 1377px;
+  margin-bottom: 2%;
+}
+
+.options a button {
+  padding: 4% 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #5F6469;
+  -webkit-transform: matrix(1, 0, -0.5, 0.87, 0, 0);
+          transform: matrix(1, 0, -0.5, 0.87, 0, 0);
+}
+
+.options a p {
+  -webkit-transform: matrix(1, 0, 0.5, 1, 0, 0);
+          transform: matrix(1, 0, 0.5, 1, 0, 0);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.54rem;
+  line-height: 115%;
+}
+
+.options a .buttonOne {
+  background: #D8D816;
+}
+
+.info {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  font-size: 0.54rem;
+}
+
+.info:not(:first-child) {
+  margin-top: 1%;
+}
+
+.graph__info {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mpi {
+  max-width: 50.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3%;
+  margin-left: 0.5%;
+}
+
+.mpi h2 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 158%;
+  color: #101828;
+}
+/*# sourceMappingURL=style.css.map */
