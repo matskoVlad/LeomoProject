@@ -104,7 +104,7 @@ main .container .cover {
       grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 2%;
           column-gap: 2%;
-  margin-top: 2.5%;
+  margin-top: 2.7%;
   margin-left: 0.8%;
   max-width: 1377px;
   margin-bottom: 2%;
@@ -113,9 +113,9 @@ main .container .cover {
 .options a button {
   cursor: pointer;
   background-color: transparent;
-  padding: 4% 0;
+  padding: 4.5% 0;
   height: 100%;
-  width: 100%;
+  width: 102%;
   border: 1px solid #5F6469;
   -webkit-transform: matrix(1, 0, -0.5, 0.87, 0, 0);
           transform: matrix(1, 0, -0.5, 0.87, 0, 0);
@@ -131,9 +131,13 @@ main .container .cover {
   line-height: 115%;
 }
 
-.options a .buttonOne {
+.options a .active {
   background: #D8D816;
   border: none;
+}
+
+.options a .active p {
+  font-weight: 500;
 }
 
 .info {
@@ -145,7 +149,7 @@ main .container .cover {
 }
 
 .info:not(:first-child) {
-  margin-top: 1%;
+  margin-top: 0.5%;
 }
 
 .graph__info {
@@ -485,5 +489,113 @@ main .container .cover {
   font-size: 0.46rem;
   line-height: 143%;
   color: #434C5F;
+}
+
+.leftAnkle {
+  margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leftAnkle button {
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transform: matrix(1, 0, -0.5, 0.87, 0, 0);
+          transform: matrix(1, 0, -0.5, 0.87, 0, 0);
+  border: 1px solid #5F6469;
+  padding: 1.2% 24%;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leftAnkle button p {
+  -webkit-transform: matrix(1, 0, 0.5, 1, 0, 0);
+          transform: matrix(1, 0, 0.5, 1, 0, 0);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.53rem;
+  line-height: 160%;
+}
+
+.leftAnkle .active {
+  background: #D8D816;
+  border: none;
+  margin-right: 1%;
+}
+
+.leftAnkle .active p {
+  font-weight: 500;
+}
+
+.video {
+  margin-top: 1.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.video__item {
+  width: 36vw;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #232323;
+}
+
+.video__item h4 {
+  padding-top: 3%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  color: #D8D816;
+  font-size: 0.53rem;
+}
+
+.video__item:last-child {
+  width: 36.5vw;
+}
+
+.video__item img {
+  margin-top: 34%;
+}
+
+.highCadence .cadence {
+  background: #D8D816;
+  margin-top: 1.7%;
+  padding: 0.6% 0;
+}
+
+.highCadence .cadence h4 {
+  margin-left: 0.7%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.53rem;
+  line-height: 115%;
+  color: #57591A;
 }
 /*# sourceMappingURL=style.css.map */
