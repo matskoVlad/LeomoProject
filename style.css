@@ -6,11 +6,22 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url(fonts/Helvetica.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
 * {
+  padding: 0;
   margin: 0;
-  border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  font-size: 30px;
 }
 
 header {
@@ -34,11 +45,8 @@ header .container img {
   max-width: 1728px;
 }
 
-.string {
-  height: 15px;
-}
-
 main {
+  padding-top: 0.8%;
   background-color: #F6F6F6;
 }
 
@@ -58,32 +66,39 @@ main .container .cover {
 }
 
 .dataInformation h1 {
+  font-size: 1rem;
   font-family: 'Aeonik';
-  font-size: 30px;
   color: #101828;
+  margin-bottom: 0.5%;
 }
 
 .dataInformation p {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.54rem;
   color: #5F6469;
 }
 
 .options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 3%;
-  margin-left: 1.8%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+  margin-top: 2.5%;
+  margin-left: 0.8%;
+  max-width: 1377px;
+  margin-bottom: 2%;
 }
 
 .options a button {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 4% 0;
+  height: 100%;
+  width: 100%;
   border: 1px solid #5F6469;
   -webkit-transform: matrix(1, 0, -0.5, 0.87, 0, 0);
           transform: matrix(1, 0, -0.5, 0.87, 0, 0);
@@ -95,23 +110,17 @@ main .container .cover {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 0.54rem;
+  line-height: 115%;
 }
 
-.options a .buttonOne {
-  padding: 13px 165px;
-  margin-left: -2%;
+.options a .active {
+  background: #D8D816;
+  border: none;
 }
 
-.options a .buttonTwo {
-  padding: 13px 159px;
-  margin-left: -2%;
-}
-
-.options a .buttonThree {
-  padding: 13px 185px;
-  margin-left: -2%;
+.graph {
+  margin-top: 1.5%;
 }
 
 .HighCadenceFirst .logo {
@@ -159,7 +168,7 @@ main .container .cover {
   row-gap: 36%;
   max-width: 1263px;
   margin-left: 2%;
-  margin-top: 2.1%;
+  margin-top: -1%;
 }
 
 .choiceIndicator .indicator {
@@ -184,5 +193,297 @@ main .container .cover {
   font-size: 12px;
   line-height: 20px;
   color: #434C5F;
+}
+
+.lightBlue {
+  background: #ACC1FF;
+}
+
+.lightBlue p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.46rem;
+  color: #FFFFFF;
+}
+
+.lightRed {
+  background: #FFAEAE;
+}
+
+.lightRed p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.46rem;
+  color: #FFFFFF;
+}
+
+.blue {
+  background: #587FE1;
+}
+
+.blue p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.46rem;
+  color: #FFFFFF;
+}
+
+.red {
+  background: #EB5757;
+}
+
+.red p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.46rem;
+  color: #FFFFFF;
+}
+
+.tableHighCadence1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 13.2% 13.5% 13.5% 13.4% 13.4% 13.5% 13.5%;
+      grid-template-columns: 13.2% 13.5% 13.5% 13.4% 13.4% 13.5% 13.5%;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+  margin-top: 3.5%;
+  height: 120%;
+}
+
+.tableHighCadence1 div {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.46rem;
+  color: #434C5F;
+  text-align: center;
+}
+
+.tableHighCadence1 .header {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.4rem;
+}
+
+.tableHighCadence1 .column1 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.tableHighCadence1 .column1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 9.4% 20% 9.4% 12%;
+}
+
+.tableHighCadence1 .column1 div:not(:first-child) {
+  border-top: #DFDFDF 1px solid;
+  border-left: #DFDFDF 1px solid;
+  border-right: #DFDFDF 1px solid;
+}
+
+.tableHighCadence1 .column1 div:last-child {
+  border-bottom: #DFDFDF 1px solid;
+}
+
+.tableHighCadence1 .column1 div p {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.tableHighCadence1 .column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.tableHighCadence1 .column .bigSpan {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.tableHighCadence1 .column div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableHighCadence1 .column div:not(:first-child) {
+  border-top: #DFDFDF 1px solid;
+  border-left: #DFDFDF 1px solid;
+  border-right: #DFDFDF 1px solid;
+}
+
+.tableHighCadence1 .column div:last-child {
+  border-bottom: #DFDFDF 1px solid;
+}
+
+.tableHighCadence1 .column div:nth-child(n+1) {
+  border-bottom: #DFDFDF 1px solid;
+}
+
+.tableHighCadence1 .column .doubleSquare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.HighCadenceSecond .logo {
+  background: #D8D816;
+  margin-top: 2.7%;
+  padding: 0.6% 0;
+}
+
+.HighCadenceSecond .logo p {
+  margin-left: 0.7%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.53rem;
+  line-height: 115%;
+  color: #57591A;
+}
+
+.HighCadenceSecond .navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+}
+
+.HighCadenceSecond .navi h2 {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 38px;
+  color: #101828;
+}
+
+.HighCadenceSecond img {
+  margin-top: 1.4%;
+  max-width: 100%;
+}
+
+.tableHighCadence2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 13.2% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-columns: 13.2% 10% 10% 10% 10% 10% 10% 10% 10%;
+  -webkit-column-gap: 0.8%;
+          column-gap: 0.8%;
+  margin-top: 3.5%;
+  height: 120%;
+}
+
+.tableHighCadence2 div {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.46rem;
+  color: #434C5F;
+  text-align: center;
+}
+
+.tableHighCadence2 .header {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.4rem;
+}
+
+.tableHighCadence2 .column1 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.tableHighCadence2 .column1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 9.4% 20% 9.4% 12%;
+}
+
+.tableHighCadence2 .column1 div:not(:first-child) {
+  border-top: #DFDFDF 1px solid;
+  border-left: #DFDFDF 1px solid;
+  border-right: #DFDFDF 1px solid;
+}
+
+.tableHighCadence2 .column1 div:last-child {
+  border-bottom: #DFDFDF 1px solid;
+}
+
+.tableHighCadence2 .column1 div p {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.tableHighCadence2 .column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.tableHighCadence2 .column .bigSpan {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.tableHighCadence2 .column div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableHighCadence2 .column div:not(:first-child) {
+  border-top: #DFDFDF 1px solid;
+  border-left: #DFDFDF 1px solid;
+  border-right: #DFDFDF 1px solid;
+}
+
+.tableHighCadence2 .column div:last-child {
+  border-bottom: #DFDFDF 1px solid;
+}
+
+.tableHighCadence2 .column div:nth-child(n+1) {
+  border-bottom: #DFDFDF 1px solid;
+}
+
+.tableHighCadence2 .column .doubleSquare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */
