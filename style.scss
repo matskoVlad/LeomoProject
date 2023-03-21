@@ -20,8 +20,26 @@
     box-sizing: border-box;
 }
 
+
 html {
     font-size: 30px;
+}
+
+.lightBlue {
+    background: #ACC1FF;
+}
+
+.lightRed {
+    background: #FFAEAE;
+}
+
+.blue {
+    background: #587FE1;
+
+}
+
+.even {
+    background: #F8F8F8;
 }
 
 header {
@@ -47,6 +65,7 @@ main {
         background-color: #FFFFFF;
         margin: 0 auto;
         max-width: 1478px;
+        padding-bottom: 5%;
 
         .cover {
             margin: 0 auto;
@@ -122,19 +141,6 @@ main {
     }
 }
 
-.lightBlue {
-    background: #ACC1FF;
-}
-
-.lightRed {
-    background: #FFAEAE;
-}
-
-.blue {
-    background: #587FE1;
-
-}
-
 .graph {
     &__info {
         margin-top: 2%;
@@ -179,12 +185,19 @@ main {
                     font-size: 0.4rem;
 
                     li {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
                         img {
-                            padding-right: 2%;
+                            margin-left: -1.2%;
+                            margin-right: 4%;
+                            width: 8px;
+                            height: 8px;
                         }
 
                         &:not(:last-child) {
-                            padding-bottom: 2%;
+                            padding-bottom: 3.5%;
                         }
                     }
                 }
@@ -231,7 +244,7 @@ main {
             }
 
             img {
-                margin-right: 20%;
+                margin-right: 11%;
                 width: 8px;
                 height: 8px;
             }
@@ -281,40 +294,27 @@ main {
                     padding: 6.45% 20% 6.45% 10%;
                 }
 
-                div {
-                    .lightBlue {
-                        background: #ACC1FF;
-                    }
-
-                    .lightRed {
-                        background: #FFAEAE;
-                    }
-
-                    .blue {
-                        background: #587FE1;
-
-                    }
-                }
-
-                div:nth-child(14) {
+                .lightBlue {
                     background: #ACC1FF;
+                    color: #FFFFFF;
+                    border: none;
                 }
 
-
-                div:nth-child(-n+22):nth-child(n+3):nth-child(-n+6) {
-                    background-color: #F8F8F8;
+                .lightRed {
+                    background: #FFAEAE;
+                    color: #FFFFFF;
+                    border: none;
                 }
 
-                div:nth-child(-n+22):nth-child(n+3):nth-child(n+11):nth-child(-n+14) {
-                    background-color: #F8F8F8;
+                .blue {
+                    background: #587FE1;
+                    color: #FFFFFF;
+                    border: none;
+
                 }
 
-                div:nth-child(-n+22):nth-child(n+3):nth-child(n+19):nth-child(-n+22) {
-                    background-color: #F8F8F8;
-                }
-
-                div:nth-child(14) {
-                    background: #ACC1FF;
+                .border {
+                    border-bottom: #DFDFDF 1px solid;
                 }
 
                 .dataValue {
@@ -349,7 +349,6 @@ main {
 
 .graph__bottom {
     margin-top: 3.2%;
-    margin-bottom: 20%;
     margin-left: -0.7%;
     margin-right: 0.4%;
 

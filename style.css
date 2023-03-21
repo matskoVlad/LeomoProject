@@ -24,6 +24,22 @@ html {
   font-size: 30px;
 }
 
+.lightBlue {
+  background: #ACC1FF;
+}
+
+.lightRed {
+  background: #FFAEAE;
+}
+
+.blue {
+  background: #587FE1;
+}
+
+.even {
+  background: #F8F8F8;
+}
+
 header {
   background-color: #242424;
 }
@@ -54,6 +70,7 @@ main .container {
   background-color: #FFFFFF;
   margin: 0 auto;
   max-width: 1478px;
+  padding-bottom: 5%;
 }
 
 main .container .cover {
@@ -131,18 +148,6 @@ main .container .cover {
   margin-top: 1%;
 }
 
-.lightBlue {
-  background: #ACC1FF;
-}
-
-.lightRed {
-  background: #FFAEAE;
-}
-
-.blue {
-  background: #587FE1;
-}
-
 .graph__info {
   margin-top: 2%;
   display: -webkit-box;
@@ -203,12 +208,27 @@ main .container .cover {
   font-size: 0.4rem;
 }
 
+.graph__info .graph .burger ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .graph__info .graph .burger ul li img {
-  padding-right: 2%;
+  margin-left: -1.2%;
+  margin-right: 4%;
+  width: 8px;
+  height: 8px;
 }
 
 .graph__info .graph .burger ul li:not(:last-child) {
-  padding-bottom: 2%;
+  padding-bottom: 3.5%;
 }
 
 .graph__info .indicators {
@@ -264,7 +284,7 @@ main .container .cover {
 }
 
 .graph__info .indicators img {
-  margin-right: 20%;
+  margin-right: 11%;
   width: 8px;
   height: 8px;
 }
@@ -324,36 +344,26 @@ main .container .cover {
   padding: 6.45% 20% 6.45% 10%;
 }
 
-.graph__info__right .table div .lightBlue {
+.graph__info__right .table .lightBlue {
   background: #ACC1FF;
+  color: #FFFFFF;
+  border: none;
 }
 
-.graph__info__right .table div .lightRed {
+.graph__info__right .table .lightRed {
   background: #FFAEAE;
+  color: #FFFFFF;
+  border: none;
 }
 
-.graph__info__right .table div .blue {
+.graph__info__right .table .blue {
   background: #587FE1;
+  color: #FFFFFF;
+  border: none;
 }
 
-.graph__info__right .table div:nth-child(14) {
-  background: #ACC1FF;
-}
-
-.graph__info__right .table div:nth-child(-n+22):nth-child(n+3):nth-child(-n+6) {
-  background-color: #F8F8F8;
-}
-
-.graph__info__right .table div:nth-child(-n+22):nth-child(n+3):nth-child(n+11):nth-child(-n+14) {
-  background-color: #F8F8F8;
-}
-
-.graph__info__right .table div:nth-child(-n+22):nth-child(n+3):nth-child(n+19):nth-child(-n+22) {
-  background-color: #F8F8F8;
-}
-
-.graph__info__right .table div:nth-child(14) {
-  background: #ACC1FF;
+.graph__info__right .table .border {
+  border-bottom: #DFDFDF 1px solid;
 }
 
 .graph__info__right .table .dataValue {
@@ -392,7 +402,6 @@ main .container .cover {
 
 .graph__bottom {
   margin-top: 3.2%;
-  margin-bottom: 20%;
   margin-left: -0.7%;
   margin-right: 0.4%;
 }
