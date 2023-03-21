@@ -6,9 +6,16 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url(fonts/Helvetica.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
 * {
+  padding: 0;
   margin: 0;
-  border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -87,6 +94,8 @@ main .container .cover {
 }
 
 .options a button {
+  cursor: pointer;
+  background-color: transparent;
   padding: 4% 0;
   height: 100%;
   width: 100%;
@@ -107,6 +116,7 @@ main .container .cover {
 
 .options a .buttonOne {
   background: #D8D816;
+  border: none;
 }
 
 .info {
@@ -121,11 +131,235 @@ main .container .cover {
   margin-top: 1%;
 }
 
+.lightBlue {
+  background: #ACC1FF;
+}
+
+.lightRed {
+  background: #FFAEAE;
+}
+
+.blue {
+  background: #587FE1;
+}
+
 .graph__info {
   margin-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.graph__info__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.graph__info .graph {
+  position: relative;
+}
+
+.graph__info .graph .burger {
+  position: absolute;
+  top: 2%;
+  left: 59%;
+  width: 29%;
+  height: 87%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 25px rgba(158, 158, 158, 0.16);
+          box-shadow: 0px 4px 25px rgba(158, 158, 158, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.graph__info .graph .burger h4 {
+  text-align: center;
+  font-size: 0.46rem;
+  font-family: 'Helvetica';
+  font-style: normal;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.graph__info .graph .burger ul {
+  list-style-type: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167%;
+  font-size: 0.4rem;
+}
+
+.graph__info .graph .burger ul li img {
+  padding-right: 2%;
+}
+
+.graph__info .graph .burger ul li:not(:last-child) {
+  padding-bottom: 2%;
+}
+
+.graph__info .indicators {
+  margin-top: 2%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 89%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167%;
+  font-size: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.graph__info .indicators ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.graph__info .indicators .secondLine {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-top: 3.5%;
+}
+
+.graph__info .indicators .secondLine li:not(:first-child) {
+  margin-left: 10%;
+}
+
+.graph__info .indicators li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.graph__info .indicators img {
+  margin-right: 20%;
+  width: 8px;
+  height: 8px;
+}
+
+.graph__info__right {
+  margin-top: -2%;
+  width: 100%;
+  margin-left: 3.5%;
+}
+
+.graph__info__right .title {
+  margin-left: 4%;
+  width: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.4rem;
+  color: #434C5F;
+  margin-bottom: 2%;
+}
+
+.graph__info__right .table {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  color: #434C5F;
+  line-height: 143%;
+  font-size: 0.46rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[13];
+      grid-template-rows: repeat(13, 1fr);
+  -ms-grid-columns: 38.63% 20.4% 20.4% 20.4%;
+      grid-template-columns: 38.63% 20.4% 20.4% 20.4%;
+}
+
+.graph__info__right .table__element {
+  border: #DFDFDF 1px solid;
+}
+
+.graph__info__right .table .bigSpan {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+}
+
+.graph__info__right .table .dataKey {
+  padding: 6.5% 20% 6.5% 10%;
+}
+
+.graph__info__right .table div .lightBlue {
+  background: #ACC1FF;
+}
+
+.graph__info__right .table div .lightRed {
+  background: #FFAEAE;
+}
+
+.graph__info__right .table div .blue {
+  background: #587FE1;
+}
+
+.graph__info__right .table div:nth-child(14) {
+  background: #ACC1FF;
+}
+
+.graph__info__right .table div:nth-child(-n+22):nth-child(n+3):nth-child(-n+6) {
+  background-color: #F8F8F8;
+}
+
+.graph__info__right .table div:nth-child(-n+22):nth-child(n+3):nth-child(n+11):nth-child(-n+14) {
+  background-color: #F8F8F8;
+}
+
+.graph__info__right .table div:nth-child(-n+22):nth-child(n+3):nth-child(n+19):nth-child(-n+22) {
+  background-color: #F8F8F8;
+}
+
+.graph__info__right .table .dataValue {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mpi {
