@@ -256,6 +256,8 @@ main {
             }
 
             .table {
+                border-left: #DFDFDF 1px solid;
+                border-top: #DFDFDF 1px solid;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 400;
@@ -267,7 +269,8 @@ main {
                 grid-template-columns: 38.63% 20.4% 20.4% 20.4%;
 
                 &__element {
-                    border: #DFDFDF 1px solid;
+                    border-bottom: #DFDFDF 1px solid;
+                    border-right: #DFDFDF 1px solid;
                 }
 
                 .bigSpan {
@@ -275,7 +278,7 @@ main {
                 }
 
                 .dataKey {
-                    padding: 6.5% 20% 6.5% 10%;
+                    padding: 6.45% 20% 6.45% 10%;
                 }
 
                 div {
@@ -297,6 +300,7 @@ main {
                     background: #ACC1FF;
                 }
 
+
                 div:nth-child(-n+22):nth-child(n+3):nth-child(-n+6) {
                     background-color: #F8F8F8;
                 }
@@ -309,11 +313,9 @@ main {
                     background-color: #F8F8F8;
                 }
 
-                // div:nth-child(4),
-                // div:nth-child(6),
-
-
-
+                div:nth-child(14) {
+                    background: #ACC1FF;
+                }
 
                 .dataValue {
                     text-align: center;
@@ -327,8 +329,6 @@ main {
 
     }
 }
-
-
 
 .mpi {
     max-width: 50.8%;
@@ -344,5 +344,75 @@ main {
         font-size: 0.8rem;
         line-height: 158%;
         color: #101828;
+    }
+}
+
+.graph__bottom {
+    margin-top: 3.2%;
+    margin-bottom: 20%;
+    margin-left: -0.7%;
+    margin-right: 0.4%;
+
+    .table {
+        border-left: #DFDFDF 1px solid;
+        border-bottom: #DFDFDF 1px solid;
+
+        display: grid;
+        grid-template-columns: 28.45% 8.95% 8.95% 8.95% 8.95% 8.95% 8.95% 8.95% 8.95%;
+        grid-template-rows: repeat(8, 1fr);
+
+        .dataKey {
+            grid-column: 1/2;
+            padding: 3.9% 20% 3.9% 5%;
+        }
+
+        .dataValue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dataValue1 {
+            font-weight: 600;
+            grid-column: 2/ span 2;
+            border-bottom: 7px #587FE1 solid;
+            color: #587FE1;
+        }
+
+        .dataValue2 {
+            border-bottom: 7px #ACC1FF solid;
+            color: #ACC1FF;
+            font-weight: 600;
+            grid-column: 4 / span 2;
+        }
+
+        .dataValue3 {
+            border-bottom: 7px #FFAEAE solid;
+            color: #FFAEAE;
+            font-weight: 600;
+            grid-column: 6 / span 2;
+        }
+
+        .dataValue4 {
+            border-bottom: 7px #EB5757 solid;
+            color: #EB5757;
+            font-weight: 600;
+            grid-column: 8 / span 2;
+        }
+
+        .even {
+            background: #F8F8F8;
+        }
+
+        &__element {
+            border-right: #DFDFDF 1px solid;
+            border-top: #DFDFDF 1px solid;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.46rem;
+            line-height: 143%;
+            color: #434C5F;
+        }
     }
 }
