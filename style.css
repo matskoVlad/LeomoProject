@@ -29,8 +29,16 @@ html {
   color: #FFFFFF;
 }
 
+.lightBlue p {
+  color: #FFFFFF;
+}
+
 .lightRed {
   background: #FFAEAE;
+  color: #FFFFFF;
+}
+
+.lightRed p {
   color: #FFFFFF;
 }
 
@@ -39,8 +47,16 @@ html {
   color: #FFFFFF;
 }
 
+.blue p {
+  color: #FFFFFF;
+}
+
 .red {
   background: #EB5757;
+  color: #FFFFFF;
+}
+
+.red p {
   color: #FFFFFF;
 }
 
