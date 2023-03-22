@@ -135,9 +135,9 @@ main .container .cover {
       grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 2%;
           column-gap: 2%;
-  margin-top: 2.7%;
+  margin-top: 2.3%;
   margin-left: 0.8%;
-  max-width: 100%;
+  max-width: 97%;
   margin-bottom: 2%;
 }
 
@@ -174,7 +174,7 @@ main .container .cover {
 
 .optionsPage2 {
   margin-top: 2.9%;
-  max-width: 97%;
+  max-width: 97.5%;
   margin-bottom: 1%;
 }
 
@@ -860,7 +860,7 @@ main .container .cover {
 .freeCadence .table {
   -webkit-column-gap: 1%;
           column-gap: 1%;
-  margin-top: 4%;
+  margin-top: 3.8%;
   height: 120%;
   display: -ms-grid;
   display: grid;
@@ -904,7 +904,7 @@ main .container .cover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 9.4% 20% 9.4% 12%;
+  padding: 9.1% 20% 9.1% 12%;
 }
 
 .freeCadence .table .column1 div:not(:first-child) {
@@ -1441,7 +1441,7 @@ main .container .cover {
     max-width: 96%;
   }
   .mpi {
-    max-width: 44%;
+    max-width: 37%;
   }
   .graph__info .graph img {
     width: 95%;
@@ -1525,6 +1525,15 @@ main .container .cover {
   }
 }
 
+@media (max-width: 768px) {
+  .mpi {
+    max-width: 43%;
+  }
+  .mpi img {
+    width: 15px;
+  }
+}
+
 @media (max-width: 425px) {
   html {
     font-size: 11px;
@@ -1533,7 +1542,7 @@ main .container .cover {
     max-width: 58%;
   }
   .mpi img {
-    width: 10px;
+    width: 8px;
   }
   .graph__info .graph img {
     width: 88%;

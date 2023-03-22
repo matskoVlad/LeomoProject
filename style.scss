@@ -123,9 +123,9 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2%;
-    margin-top: 2.7%;
+    margin-top: 2.3%;
     margin-left: 0.8%;
-    max-width: 100%;
+    max-width: 97%;
     margin-bottom: 2%;
 
     a {
@@ -162,7 +162,7 @@ main {
 
 .optionsPage2 {
     margin-top: 2.9%;
-    max-width: 97%;
+    max-width: 97.5%;
     margin-bottom: 1%;
 }
 
@@ -725,7 +725,7 @@ main {
 
     .table {
         column-gap: 1%;
-        margin-top: 4%;
+        margin-top: 3.8%;
         height: 120%;
         display: grid;
         grid-template-columns: 13.2% repeat(15, 1fr);
@@ -760,7 +760,7 @@ main {
 
             div {
                 display: flex;
-                padding: 9.4% 20% 9.4% 12%;
+                padding: 9.1% 20% 9.1% 12%;
 
                 &:not(:first-child) {
                     border-top: #DFDFDF 1px solid;
@@ -1229,7 +1229,7 @@ main {
     }
 
     .mpi {
-        max-width: 44%;
+        max-width: 37%;
     }
 
     .graph {
@@ -1363,6 +1363,14 @@ main {
         font-size: 0.39rem;
     }
 }
+@media (max-width:768px){
+    .mpi {
+        max-width: 43%;
+        img{
+            width: 15px ;
+        }
+    }
+}
 
 @media (max-width:425px) {
     html {
@@ -1373,7 +1381,7 @@ main {
         max-width: 58%;
 
         img {
-            width: 10px;
+            width: 8px;
         }
     }
 
