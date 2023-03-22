@@ -124,6 +124,7 @@ main {
         }
 
         p {
+            color: #000000;
             transform: matrix(1, 0, 0.5, 1, 0, 0);
             font-family: 'Inter';
             font-style: normal;
@@ -453,6 +454,7 @@ main {
 
 
         p {
+            color: #000000;
             transform: matrix(1, 0, 0.5, 1, 0, 0);
             font-family: 'Inter';
             font-style: normal;
@@ -1396,6 +1398,10 @@ main {
             width: 13px;
             margin: 0;
         }
+    }
+
+    .tableHighCadence3Page3 {
+        width: 99%;
     }
 }
 
