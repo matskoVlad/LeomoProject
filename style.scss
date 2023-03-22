@@ -1342,6 +1342,10 @@ main {
             width: 15px;
         }
     }
+
+    p {
+        font-size: 0.39rem;
+    }
 }
 
 @media (max-width:425px) {
@@ -1402,6 +1406,10 @@ main {
 
     .tableHighCadence3Page3 {
         width: 99%;
+
+        p {
+            font-size: 0.39rem;
+        }
     }
 }
 
