@@ -42,7 +42,7 @@ header .container {
 }
 
 header .container img {
-  max-width: 1728px;
+  max-width: 100%;
 }
 
 main {
@@ -159,6 +159,10 @@ main .container .cover {
   font-size: 0.8rem;
   line-height: 38px;
   color: #101828;
+}
+
+.HighCadenceFirstPage3 img {
+  max-width: 100%;
 }
 
 .choiceIndicator {

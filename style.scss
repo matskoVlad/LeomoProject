@@ -33,7 +33,7 @@ header {
         align-items: center;
 
         img {
-            max-width: 1728px;
+            max-width: 100%;
         }
     }
 }
@@ -145,6 +145,10 @@ main {
             line-height: 38px;
             color: #101828;
         }
+    }
+
+    img {
+        max-width: 100%;
     }
 }
 
@@ -521,5 +525,113 @@ main {
     }
 }
 
+// @media (max-width: 1024px) {
+//     .options {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         column-gap: 2%;
+//         margin-top: 2.5%;
+//         margin-left: 1.8%;
+//         margin-right: 2%;
+//         max-width: 1377px;
+//         margin-bottom: 2%;
+//     }
 
-    
+//     html {
+//         font-size: 19px;
+//     }
+
+//     .choiceIndicator {
+//         .indicator {
+
+//         img {
+//             width: 8px;
+//              height: 8px;
+//             margin-right: 7%;
+//         }
+//     }
+// }
+// }
+// @media (max-width: 768px) {
+//     .options {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         column-gap: 2%;
+//         margin-top: 2.5%;
+//         margin-left: 1.8%;
+//         margin-right: 2%;
+//         max-width: 1377px;
+//         margin-bottom: 2%;
+//     }
+
+//     html {
+//         font-size: 16px;
+//     }
+
+//     .choiceIndicator {
+//         .indicator {
+
+//             img {
+//              width: 6px;
+//              height: 6px;
+//              margin-right: 7%;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 520px) {
+//     .options {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         column-gap: 2%;
+//         margin-top: 2.5%;
+//         margin-left: 1.8%;
+//         margin-right: 2%;
+//         max-width: 1377px;
+//         margin-bottom: 2%;
+//     }
+
+//     html {
+//         font-size: 10px;
+//     }
+
+//     .choiceIndicator {
+//         .indicator {
+
+//             img {
+//              width: 4px;
+//              height: 4px;
+//              margin-right: 7%;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 520px) {
+//     .options {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         column-gap: 2%;
+//         margin-top: 2.5%;
+//         margin-left: 1.8%;
+//         margin-right: 2%;
+//         max-width: 1377px;
+//         margin-bottom: 2%;
+//     }
+
+//     html {
+//         font-size: 8px;
+//     }
+
+//     .choiceIndicator {
+//         .indicator {
+
+//             img {
+//              width: 2px;
+//              height: 2px;
+//              margin-right: 7%;
+//             }
+//         }
+//     }
+// }
